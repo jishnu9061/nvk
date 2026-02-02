@@ -205,6 +205,38 @@
             </div>
         </div>
     </section>
+    <!-- Dedicated Catering Section (Artistic Redesign) -->
+    <section class="catering-section">
+        <div class="container catering-container">
+            <div class="catering-art-wrapper">
+                <div class="catering-visual" data-aos="fade-right">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/catering.png" alt="MVK Heritage Catering" class="catering-img-main">
+                    <div class="catering-floating-badge">
+                        <span>25+</span>
+                        <p>Years of Flavor</p>
+                    </div>
+                </div>
+                <div class="catering-content-premium" data-aos="fade-left">
+                    <span class="label">Luxury Catering</span>
+                    <h2>Elegance in Every Bite</h2>
+                    <p class="catering-desc">We bring more than just food; we bring an experience. Our premium catering services combine the timeless heritage of Malabar cuisine with modern professional service for events that are remembered for a lifetime.</p>
+                    
+                    <ul class="catering-list-premium">
+                        <li>Traditional Malabar Sadya <span>Authentic</span></li>
+                        <li>Live Appam & Seafood Counters <span>Interactive</span></li>
+                        <li>Corporate Gala Dinners <span>Professional</span></li>
+                        <li>Custom Celebration Cakes <span>Exclusive</span></li>
+                    </ul>
+                    
+                    <div class="catering-btn-group">
+                        <a href="<?php echo esc_url(home_url('/contact')); ?>" class="btn btn-primary">Book an Event</a>
+                        <a href="<?php echo esc_url(home_url('/services')); ?>" class="btn btn-outline">Our Expertise</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Specialties -->
     <section class="specialties" style="background: #fff;">

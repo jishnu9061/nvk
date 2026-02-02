@@ -44,7 +44,7 @@ body {
     background: var(--base);
     line-height: 1.7;
     -webkit-font-smoothing: antialiased;
-    padding-top: 100px;
+    padding-top: 130px;
     /* Prevent fixed header overlap globally */
 }
 
@@ -149,8 +149,8 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
-    height: 100px;
-    /* More airy, premium height */
+    height: 130px;
+    /* More airy, premium height for larger logo */
     display: flex;
     align-items: center;
     transition: all 0.4s ease;
@@ -190,8 +190,8 @@ body.admin-bar header {
 }
 
 .logo-img {
-    max-height: 100px;
-    /* Smaller logo for more breathability */
+    max-height: 130px;
+    /* Increased logo size as requested */
     height: auto;
     width: auto;
     transition: all 0.4s ease;
@@ -942,7 +942,7 @@ nav ul li.current_page_item a {
 .hero-slider {
     position: relative;
     height: 110vh;
-    min-height: 1075px;
+    min-height: 1160px;
     overflow: hidden;
     /* Pull back up to sit under fixed header or fit viewport */
     margin-top: -100px;
@@ -1370,12 +1370,12 @@ footer {
 
 @media (max-width: 768px) {
     header {
-        height: 80px;
+        height: 100px;
         padding: 0;
     }
 
     .logo-img {
-        max-height: 40px;
+        max-height: 70px;
     }
 
     section {
@@ -1921,12 +1921,12 @@ header {
 
 header.header-scrolled {
     background: var(--white);
-    height: 90px;
+    height: 100px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
 }
 
 header.header-scrolled .logo-img {
-    max-height: 100px;
+    max-height: 130px;
 }
 
 /* Menu Page Specific Header - Reverted to Standard */
@@ -2097,7 +2097,190 @@ header.header-scrolled .logo-img {
     transition: color 0.3s ease;
 }
 
-/* Services Page Specific Responsive */
+/* Premium Catering - Redesigned for WOW factor */
+.catering-section {
+    padding: 160px 0;
+    background: #fff;
+    position: relative;
+    overflow: visible;
+}
+
+.catering-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 100%;
+    background: var(--base-alt);
+    z-index: 1;
+}
+
+.catering-container {
+    position: relative;
+    z-index: 2;
+}
+
+.catering-art-wrapper {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 100px;
+    align-items: center;
+}
+
+.catering-visual {
+    position: relative;
+}
+
+.catering-img-main {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 30px 30px 0 var(--base-alt);
+    transition: var(--transition);
+}
+
+.catering-floating-badge {
+    position: absolute;
+    bottom: -40px;
+    right: -40px;
+    background: var(--primary);
+    color: var(--white);
+    padding: 40px;
+    border-radius: 0;
+    box-shadow: var(--shadow-lg);
+    z-index: 3;
+    text-align: center;
+}
+
+.catering-floating-badge span {
+    display: block;
+    font-size: 2.5rem;
+    font-family: 'Marcellus', serif;
+    line-height: 1;
+}
+
+.catering-floating-badge p {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-top: 5px;
+    opacity: 0.8;
+}
+
+.catering-content-premium {
+    padding-right: 40px;
+}
+
+.catering-content-premium .label {
+    font-family: 'Marcellus', serif;
+    color: var(--secondary);
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.catering-content-premium h2 {
+    font-size: 4rem;
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+
+.catering-desc {
+    font-size: 1.15rem;
+    color: var(--text-muted);
+    margin-bottom: 50px;
+    line-height: 1.9;
+}
+
+.catering-list-premium {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 50px;
+}
+
+.catering-list-premium li {
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+}
+
+.catering-list-premium li span {
+    color: var(--secondary);
+    font-size: 1.1rem;
+}
+
+.catering-btn-group {
+    display: flex;
+    gap: 20px;
+}
+
+/* Services Page Extension */
+.catering-v2 {
+    background: var(--dark);
+    padding: 80px 60px;
+    /* Increased side padding */
+    color: white;
+    border-radius: 20px;
+    margin-bottom: 80px;
+    position: relative;
+    overflow: visible;
+    /* Ensure badge isn't cut off */
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.catering-v2 .catering-desc {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Dark Mode Catering Fixes */
+.catering-v2 .label {
+    color: var(--secondary) !important;
+}
+
+.catering-v2 h2 {
+    color: white !important;
+}
+
+.catering-v2 .catering-desc {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.catering-v2 .catering-list-premium li {
+    color: white;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.catering-v2 .catering-list-premium li span {
+    color: var(--secondary);
+}
+
+@media (max-width: 1024px) {
+    .catering-art-wrapper {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .catering-content-premium {
+        padding-right: 0;
+    }
+
+    .catering-section {
+        padding: 100px 0;
+    }
+
+    .catering-content-premium h2 {
+        font-size: 3rem;
+    }
+
+    .catering-floating-badge {
+        right: 0;
+        padding: 30px;
+    }
+}
+
 @media (max-width: 768px) {
     .specialty-grid {
         grid-template-columns: 1fr !important;

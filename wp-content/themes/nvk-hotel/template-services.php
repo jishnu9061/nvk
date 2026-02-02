@@ -289,6 +289,38 @@ get_header(); ?>
             </div>
         </div>
 
+        <!-- Dedicated Catering Section (Artistic Redesign) -->
+    <!-- Dedicated Catering Section (Artistic Services Version) -->
+    <div class="catering-v2 mb-120">
+        <div class="catering-art-wrapper">
+            <div class="catering-visual" data-aos="fade-right">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/catering.png" alt="MVK Heritage Catering" class="catering-img-main" style="box-shadow: 20px 20px 0 rgba(255,255,255,0.05);">
+                <div class="catering-floating-badge" style="background: var(--secondary); color: var(--dark);">
+                    <span>100%</span>
+                    <p>Authentic</p>
+                </div>
+            </div>
+            <div class="catering-content-premium" data-aos="fade-left">
+                <span class="label">Elite Hospitality</span>
+                <h2>The Art of Outdoor Dining</h2>
+                <p class="catering-desc">Whether it's a home-based celebration or a grand outdoor venue, we provide a complete catering solution. Our expertise lies in delivering consistent quality and authentic Malabar taste, scaled gracefully to your guest count.</p>
+                
+                <ul class="catering-list-premium">
+                    <li>Live Traditional Appam & Stew Counters <span>Interactive</span></li>
+                    <li>Table-side Grill & Seafood Services <span>Premium</span></li>
+                    <li>Professional Uniformed Waitstaff <span>Exquisite</span></li>
+                    <li>Complete Crockery & Decor Sync <span>Flawless</span></li>
+                </ul>
+                
+                <div class="catering-btn-group">
+                    <a href="<?php echo esc_url(home_url('/contact')); ?>" class="btn btn-primary" style="background: var(--secondary); color: var(--dark);">Request a Proposal</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
         <!-- Event CTA -->
         <div class="visit-cta services-cta">
             <div class="cta-content">
