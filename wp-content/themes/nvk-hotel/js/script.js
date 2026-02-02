@@ -3,11 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const header = document.querySelector('header');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
-            header.style.boxShadow = '0 4px 20px rgba(0,0,0,0.1)';
-            header.style.padding = '15px 0';
+            header.classList.add('header-scrolled');
         } else {
-            header.style.boxShadow = 'none';
-            header.style.padding = '20px 0';
+            header.classList.remove('header-scrolled');
         }
     });
 
@@ -132,6 +130,56 @@ document.addEventListener('DOMContentLoaded', () => {
                 menuToggle.classList.remove('active');
                 menuToggle.setAttribute('aria-expanded', 'false');
                 body.classList.remove('menu-open');
+            });
+        });
+    }
+
+    // Initialize AOS
+    if (typeof AOS !== 'undefined') {
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+    }
+
+    // Menu Tabs Active State on Scroll
+    const menuTabs = document.querySelectorAll('.menu-nav-tabs a');
+    const menuSections = document.querySelectorAll('.menu-category-section');
+
+    function updateActiveTab() {
+        let current = '';
+        menuSections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (window.pageYOffset >= (sectionTop - 250)) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        menuTabs.forEach(a => {
+            a.classList.remove('active');
+            if (a.getAttribute('href') === `#${current}`) {
+                a.classList.add('active');
+            }
+        });
+    }
+
+    if (menuTabs.length > 0) {
+        window.addEventListener('scroll', updateActiveTab);
+
+        // Smooth scroll for menu tabs
+        menuTabs.forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 180,
+                        behavior: 'smooth'
+                    });
+                }
             });
         });
     }

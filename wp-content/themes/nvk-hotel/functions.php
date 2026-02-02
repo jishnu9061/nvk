@@ -19,11 +19,15 @@ function nvk_hotel_scripts()
     // Fonts: Marcellus for headings, Outfit for body
     wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Marcellus&family=Outfit:wght@300;400;500;600&display=swap', array(), null);
 
+    // AOS Animation Library
+    wp_enqueue_style('aos-style', 'https://unpkg.com/aos@2.3.1/dist/aos.css', array(), '2.3.1');
+    wp_enqueue_script('aos-script', 'https://unpkg.com/aos@2.3.1/dist/aos.js', array(), '2.3.1', true);
+
     // Main Styles
     wp_enqueue_style('nvk-hotel-style', get_stylesheet_uri());
 
     // Main Scripts
-    wp_enqueue_script('nvk-hotel-script', get_template_directory_uri() . '/js/script.js', array(), '1.1', true);
+    wp_enqueue_script('nvk-hotel-script', get_template_directory_uri() . '/js/script.js', array('aos-script'), '1.1', true);
 }
 add_action('wp_enqueue_scripts', 'nvk_hotel_scripts');
 
@@ -31,12 +35,12 @@ function nvk_default_menu()
 {
     echo '<div class="nav-menu-wrapper">';
     echo '<ul id="primary-menu" class="nav-list">';
-    echo '<li><a href="' . esc_url(home_url('/')) . '">Home</a></li>';
-    echo '<li><a href="' . esc_url(home_url('/about')) . '">About</a></li>';
-    echo '<li><a href="' . esc_url(home_url('/menu')) . '">Menu</a></li>';
-    echo '<li><a href="' . esc_url(home_url('/services')) . '">Services</a></li>';
-    echo '<li><a href="' . esc_url(home_url('/locations')) . '">Locations</a></li>';
-    echo '<li><a href="' . esc_url(home_url('/contact')) . '">Contact</a></li>';
+    echo '<li><a href="' . esc_url(home_url('/')) . '" class="' . (is_front_page() ? 'active-link' : '') . '">Home</a></li>';
+    echo '<li><a href="' . esc_url(home_url('/about')) . '" class="' . ((is_page('about') || is_page_template('template-about.php')) && !is_front_page() ? 'active-link' : '') . '">About</a></li>';
+    echo '<li><a href="' . esc_url(home_url('/menu')) . '" class="' . ((is_page('menu') || is_page_template('template-menu.php')) && !is_front_page() ? 'active-link' : '') . '">Menu</a></li>';
+    echo '<li><a href="' . esc_url(home_url('/services')) . '" class="' . ((is_page('services') || is_page_template('template-services.php')) && !is_front_page() ? 'active-link' : '') . '">Services</a></li>';
+    echo '<li><a href="' . esc_url(home_url('/blog')) . '" class="' . (is_home() || is_singular('post') || is_archive() ? 'active-link' : '') . '">Blog</a></li>';
+    echo '<li><a href="' . esc_url(home_url('/contact')) . '" class="' . ((is_page('contact') || is_page_template('template-contact.php')) && !is_front_page() ? 'active-link' : '') . '">Contact</a></li>';
     echo '</ul>';
     echo '</div>';
 }
@@ -97,3 +101,12 @@ function mvk_login_logo_url_title()
     return 'MVK Heritage Foods';
 }
 add_filter('login_headertext', 'mvk_login_logo_url_title');
+
+function nvk_menu_body_class($classes)
+{
+    if (is_page_template('template-menu.php') || is_page('menu')) {
+        $classes[] = 'nvk-menu-page';
+    }
+    return $classes;
+}
+add_filter('body_class', 'nvk_menu_body_class');

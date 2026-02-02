@@ -31,7 +31,7 @@
                 ?>
             </nav>
             <div class="header-cta">
-                <a href="<?php echo esc_url(home_url('/contact')); ?>" class="btn btn-primary" style="padding: 12px 25px; font-size: 0.8rem;">Reservations</a>
+                <a href="<?php echo esc_url(home_url('/contact')); ?>" class="btn btn-primary">Reservations</a>
             </div>
         </div>
     </header>

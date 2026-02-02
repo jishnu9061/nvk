@@ -301,7 +301,7 @@ get_header(); ?>
                 </div>
             </div>
         </div>
-        <br><br>
+
     </div>
 </main>
 

@@ -147,7 +147,7 @@
                     <div class="venue-image">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/dining_hall.png" alt="Dining Hall">
                         <div class="venue-overlay">
-                            <a href="#" class="btn btn-primary">View Details</a>
+                            <a href="<?php echo esc_url(home_url('/dining-hall')); ?>" class="btn btn-primary">View Details</a>
                         </div>
                     </div>
                     <div class="venue-content">
@@ -166,7 +166,7 @@
                     <div class="venue-image">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/reception_hall.png" alt="Reception Hall">
                         <div class="venue-overlay">
-                            <a href="#" class="btn btn-primary">View Details</a>
+                            <a href="<?php echo esc_url(home_url('/reception-hall')); ?>" class="btn btn-primary">View Details</a>
                         </div>
                     </div>
                     <div class="venue-content">
@@ -185,7 +185,7 @@
                     <div class="venue-image">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/engagement_hall.png" alt="Engagement Hall">
                         <div class="venue-overlay">
-                            <a href="#" class="btn btn-primary">View Details</a>
+                            <a href="<?php echo esc_url(home_url('/engagement-hall')); ?>" class="btn btn-primary">View Details</a>
                         </div>
                     </div>
                     <div class="venue-content">
@@ -384,11 +384,75 @@
     </section>
 
     <!-- Final CTA -->
-    <section style="padding: 150px 0; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/hero.png'); background-size: cover; background-position: center; text-align: center; color: white;">
-        <div class="container">
-            <h2 style="color: white; font-size: 3.5rem; margin-bottom: 30px;">Experience the Legacy</h2>
-            <p style="margin-bottom: 40px; font-size: 1.1rem; max-width: 600px; margin-left: auto; margin-right: auto;">Join us for an unforgettable culinary journey at MVK Heritage Foods, Kannur.</p>
-            <a href="<?php echo esc_url(home_url('/contact')); ?>" class="btn btn-primary" style="background: var(--secondary); color: var(--dark);">Reserve a Table Now</a>
+    <!-- Final CTA & Reservation Form (Redesigned) -->
+    <section style="padding: 100px 0; background: #222; position: relative; overflow: hidden;">
+        <!-- Background Overlay/Effect -->
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%); z-index: 1;"></div>
+        
+        <div class="container" style="position: relative; z-index: 2; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 60px;">
+            
+            <!-- Left Side Content -->
+            <div style="flex: 1; min-width: 300px; color: white;">
+                <h2 style="font-size: 3.5rem; line-height: 1.1; margin-bottom: 25px; font-weight: 800; text-transform: uppercase;">
+                    <span style="color: var(--secondary);">Ready to Taste</span><br>
+                    The Real Malabar?
+                </h2>
+                <p style="font-size: 1.1rem; line-height: 1.6; color: #ccc; margin-bottom: 40px; max-width: 500px;">
+                    Fill the form on the right OR give us a ring on the following number to reserve your table instantly!
+                </p>
+                
+                <div style="display: flex; gap: 30px; align-items: center;">
+                    <!-- Phone Block -->
+                    <div style="display: flex; align-items: center; gap: 15px;">
+                        <div style="width: 60px; height: 60px; border: 2px solid var(--secondary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--secondary); font-size: 1.5rem;">
+                            📞
+                        </div>
+                        <div>
+                            <span style="display: block; font-size: 0.8rem; letter-spacing: 1px; color: #999; text-transform: uppercase;">Available 7 Days</span>
+                            <strong style="font-size: 1.5rem; color: white;">+91 98765 43210</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side Form -->
+            <div style="flex: 1; min-width: 350px; max-width: 500px;">
+                <div style="background: white; padding: 40px; border-radius: 12px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); border-top: 5px solid var(--secondary);">
+                    <h3 style="color: var(--dark); font-size: 1.8rem; text-align: center; margin-bottom: 30px; text-transform: uppercase; font-weight: 800;">Book Your Table</h3>
+                    
+                    <form action="#" method="post" style="display: grid; gap: 15px;">
+                        <input type="text" name="name" placeholder="Full Name" required 
+                            style="width: 100%; padding: 15px; background: #f4f4f4; border: 1px solid #eee; border-radius: 6px; font-family: 'Outfit', sans-serif;">
+                        
+                        <input type="tel" name="phone" placeholder="Phone Number" required 
+                            style="width: 100%; padding: 15px; background: #f4f4f4; border: 1px solid #eee; border-radius: 6px; font-family: 'Outfit', sans-serif;">
+                        
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                            <input type="number" name="guests" placeholder="Guests" min="1" required 
+                                style="width: 100%; padding: 15px; background: #f4f4f4; border: 1px solid #eee; border-radius: 6px; font-family: 'Outfit', sans-serif;">
+                            
+                            <input type="date" name="date" required 
+                                style="width: 100%; padding: 15px; background: #f4f4f4; border: 1px solid #eee; border-radius: 6px; font-family: 'Outfit', sans-serif;">
+                        </div>
+
+                        <select name="time" required 
+                            style="width: 100%; padding: 15px; background: #f4f4f4; border: 1px solid #eee; border-radius: 6px; font-family: 'Outfit', sans-serif; color: #555;">
+                            <option value="">Select Time</option>
+                            <option value="lunch">Lunch (12:00 PM - 3:00 PM)</option>
+                            <option value="dinner">Dinner (7:00 PM - 10:00 PM)</option>
+                        </select>
+                        
+                        <textarea name="details" placeholder="Additional Details (Optional)" rows="2" 
+                            style="width: 100%; padding: 15px; background: #f4f4f4; border: 1px solid #eee; border-radius: 6px; font-family: 'Outfit', sans-serif; resize: none;"></textarea>
+
+                        <button type="submit" class="btn btn-primary" 
+                            style="width: 100%; padding: 18px; font-size: 1.1rem; font-weight: 800; text-transform: uppercase; background: var(--secondary); border: none; color: #000; margin-top: 10px;">
+                            Reserve Now
+                        </button>
+                    </form>
+                </div>
+            </div>
+
         </div>
     </section>
 </main>
