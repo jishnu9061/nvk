@@ -64,8 +64,8 @@
     <section style="padding: 100px 0; background: var(--dark); text-align: center; color: white;">
         <div class="container">
             <h2 style="color: var(--secondary); margin-bottom: 20px;">Experience Our Hospitality</h2>
-            <p style="margin-bottom: 40px; opacity: 0.8;">Book your table today and enjoy the authentic flavors of Malabar.</p>
-            <a href="<?php echo esc_url(home_url('/contact')); ?>" class="btn btn-primary">Book a Table Now</a>
+            <p style="margin-bottom: 40px; opacity: 0.8;">Book your service today and enjoy the authentic flavors of Malabar.</p>
+            <a href="<?php echo esc_url(home_url('/contact')); ?>" class="btn btn-primary">Book Now</a>
         </div>
     </section>
 </main>

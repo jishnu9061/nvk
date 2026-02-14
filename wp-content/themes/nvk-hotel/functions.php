@@ -23,6 +23,9 @@ function nvk_hotel_scripts()
     wp_enqueue_style('aos-style', 'https://unpkg.com/aos@2.3.1/dist/aos.css', array(), '2.3.1');
     wp_enqueue_script('aos-script', 'https://unpkg.com/aos@2.3.1/dist/aos.js', array(), '2.3.1', true);
 
+    // FontAwesome for Social Icons
+    wp_enqueue_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css', array(), '6.5.1');
+
     // Main Styles
     wp_enqueue_style('nvk-hotel-style', get_stylesheet_uri());
 

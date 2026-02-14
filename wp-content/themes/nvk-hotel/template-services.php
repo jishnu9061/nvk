@@ -295,8 +295,8 @@ get_header(); ?>
                     <p>Yes, we have a dedicated spacious parking area that can accommodate over 20 cars and bikes comfortably.</p>
                 </div>
                 <div class="faq-item">
-                    <h4>Do you take table reservations?</h4>
-                    <p>Yes, we recommend booking tables in advance for weekends and holidays. You can call us or use the form below.</p>
+                    <h4>Do you take service bookings?</h4>
+                    <p>Yes, we recommend booking services in advance for weekends and holidays. You can call us or use the form below.</p>
                 </div>
                 <div class="faq-item">
                     <h4>Is the meat Halal?</h4>
@@ -310,34 +310,123 @@ get_header(); ?>
         </div>
 
         <!-- Dedicated Catering Section (Artistic Redesign) -->
-    <!-- Dedicated Catering Section (Artistic Services Version) -->
-    <div class="catering-v2 mb-120">
-        <div class="catering-art-wrapper">
-            <div class="catering-visual" data-aos="fade-right">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/catering.png" alt="MVK Heritage Catering" class="catering-img-main" style="box-shadow: 20px 20px 0 rgba(255,255,255,0.05);">
-                <div class="catering-floating-badge" style="background: var(--secondary); color: var(--dark);">
-                    <span>100%</span>
-                    <p>Authentic</p>
+        <!-- Dedicated Catering Section (Artistic Services Version) -->
+        <!-- <section class="catering-section-premium" id="catering-services" style="padding: 100px 0; margin-bottom: 80px;">
+            <div class="catering-grid-v3">
+                <div class="catering-visual-v3" data-aos="fade-right">
+                    <div class="visual-main">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/catering.png" alt="MVK Heritage Catering" class="img-responsive">
+                    </div>
+                    <div class="visual-accent">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/shared/1000150059.jpg" alt="Signature Event">
+                    </div>
+                    <div class="catering-experience-badge" style="background: var(--secondary); color: var(--dark);">
+                        <span class="count">100%</span>
+                        <span class="label">Authentic</span>
+                    </div>
+                </div>
+                
+                <div class="catering-info-v3" data-aos="fade-left">
+                    <div class="section-title-alt">
+                        <span class="subtitle">Elite Hospitality</span>
+                        <h2>The Art of Outdoor Dining</h2>
+                    </div>
+                    
+                    <p class="description">Whether it's a home-based celebration or a grand outdoor venue, we provide a complete catering solution. Our expertise lies in delivering consistent quality and authentic Malabar taste, scaled gracefully to your guest count.</p>
+                    
+                    <div class="services-list-v3">
+                        <div class="service-item-v3">
+                            <div class="service-text">
+                                <h3>Live Traditional Appam & Stew Counters</h3>
+                                <p>Interactive culinary experience</p>
+                            </div>
+                        </div>
+                        <div class="service-item-v3">
+                            <div class="service-text">
+                                <h3>Table-side Grill & Seafood Services</h3>
+                                <p>Premium dining at your venue</p>
+                            </div>
+                        </div>
+                        <div class="service-item-v3">
+                            <div class="service-text">
+                                <h3>Professional Uniformed Waitstaff</h3>
+                                <p>Exquisite service standards</p>
+                            </div>
+                        </div>
+                        <div class="service-item-v3">
+                            <div class="service-text">
+                                <h3>Complete Crockery & Decor Sync</h3>
+                                <p>Flawless aesthetic integration</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="catering-actions-v3">
+                        <a href="<?php echo esc_url(home_url('/contact')); ?>" class="btn btn-primary" style="background: var(--secondary); color: var(--dark);">Request a Proposal</a>
+                    </div>
                 </div>
             </div>
-            <div class="catering-content-premium" data-aos="fade-left">
-                <span class="label">Elite Hospitality</span>
-                <h2>The Art of Outdoor Dining</h2>
-                <p class="catering-desc">Whether it's a home-based celebration or a grand outdoor venue, we provide a complete catering solution. Our expertise lies in delivering consistent quality and authentic Malabar taste, scaled gracefully to your guest count.</p>
+        </section> -->
+         <!-- Dedicated Catering Section (Artistic Redesign) -->
+    <section class="catering-section-premium" id="catering">
+        <div class="container">
+            <div class="catering-grid-v3">
+                <div class="catering-visual-v3" data-aos="fade-right">
+                    <div class="visual-main">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/catering.png" alt="MVK Heritage Catering" class="img-responsive">
+                    </div>
+                    <div class="visual-accent">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/shared/1000150059.jpg" alt="Signature Event">
+                    </div>
+                    <div class="catering-experience-badge">
+                        <span class="count">25+</span>
+                        <span class="label">Years of Flavor</span>
+                    </div>
+                </div>
                 
-                <ul class="catering-list-premium">
-                    <li>Live Traditional Appam & Stew Counters <span>Interactive</span></li>
-                    <li>Table-side Grill & Seafood Services <span>Premium</span></li>
-                    <li>Professional Uniformed Waitstaff <span>Exquisite</span></li>
-                    <li>Complete Crockery & Decor Sync <span>Flawless</span></li>
-                </ul>
-                
-                <div class="catering-btn-group">
-                    <a href="<?php echo esc_url(home_url('/contact')); ?>" class="btn btn-primary" style="background: var(--secondary); color: var(--dark);">Request a Proposal</a>
+                <div class="catering-info-v3" data-aos="fade-left">
+                    <div class="section-title-alt">
+                        <span class="subtitle">Luxury Catering</span>
+                        <h2>Elegance in Every Bite</h2>
+                    </div>
+                    
+                    <p class="description">We bring more than just food; we bring an experience. Our premium catering services combine the timeless heritage of Malabar cuisine with modern professional service for events that are remembered for a lifetime.</p>
+                    
+                    <div class="services-list-v3">
+                        <div class="service-item-v3">
+                            <div class="service-text">
+                                <h3>Traditional Malabar Sadya</h3>
+                                <p>Authentic culinary journey on plantain leaf</p>
+                            </div>
+                        </div>
+                        <div class="service-item-v3">
+                            <div class="service-text">
+                                <h3>Live Appam & Seafood Counters</h3>
+                                <p>Interactive dining with fresh preparations</p>
+                            </div>
+                        </div>
+                        <div class="service-item-v3">
+                            <div class="service-text">
+                                <h3>Corporate Gala Dinners</h3>
+                                <p>Professional service for your milestones</p>
+                            </div>
+                        </div>
+                        <div class="service-item-v3">
+                            <div class="service-text">
+                                <h3>Custom Celebration Cakes</h3>
+                                <p>Exclusive designs for your special moments</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="catering-actions-v3">
+                        <a href="#front-contact-section" class="btn btn-primary">Book an Event</a>
+                        <a href="#front-contact-section" class="btn btn-outline">Our Expertise</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
 
 

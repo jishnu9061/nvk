@@ -150,7 +150,7 @@ get_header(); ?>
         <div class="visit-cta" style="background: var(--dark); color: white; border: none; padding: 80px; text-align: center; border-radius: 20px; margin-bottom: 100px;">
             <h3 style="color: white; margin-bottom: 20px;">Come, Taste the Tradition</h3>
             <p style="color: rgba(255,255,255,0.7); max-width: 600px; margin: 0 auto 40px; font-size: 1.1rem;">Experience the warmth of our hospitality and the richness of our flavors. Your table is waiting.</p>
-            <a href="<?php echo esc_url(home_url('/contact')); ?>" class="btn btn-primary">Book a Table</a>
+            <a href="<?php echo esc_url(home_url('/contact')); ?>" class="btn btn-primary">Book Service</a>
         </div>
 
     </div>

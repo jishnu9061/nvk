@@ -12,8 +12,8 @@
                     <h2>Experience the Grandeur of Malabar</h2>
                     <p>Serving traditional Kerala, Malabar & Indian delicacies with unmatched quality and hospitality in our premium banquet halls and dining spaces.</p>
                     <div class="hero-btns">
-                        <a href="<?php echo esc_url(home_url('/menu')); ?>" class="btn btn-primary">🍽️ Explore Menu</a>
-                        <a href="<?php echo esc_url(home_url('/contact')); ?>" class="btn btn-outline" style="color: white; border-color: white;">📅 Book a Venue</a>
+                        <a href="#front-contact-section" class="btn btn-primary">🍽️ Explore Menu</a>
+                        <a href="#front-contact-section" class="btn btn-outline" style="color: white; border-color: white;">📅 Book Service</a>
                     </div>
                 </div>
             </div>
@@ -25,8 +25,8 @@
                     <h2>Kerala Special Meals</h2>
                     <p>Experience the authentic taste of Kerala with our traditional meals served on plantain leaf.</p>
                     <div class="hero-btns">
-                        <a href="<?php echo esc_url(home_url('/menu')); ?>" class="btn btn-primary">🍛 View Menu</a>
-                        <a href="<?php echo esc_url(home_url('/contact')); ?>" class="btn btn-outline" style="color: white; border-color: white;">📞 Order Now</a>
+                        <a href="#front-contact-section" class="btn btn-primary">🍛 View Menu</a>
+                        <a href="#front-contact-section" class="btn btn-outline" style="color: white; border-color: white;">📞 Order Now</a>
                     </div>
                 </div>
             </div>
@@ -38,8 +38,8 @@
                     <h2>Malabar Seafood Delicacies</h2>
                     <p>Fresh catch from the Arabian Sea, prepared with traditional coconut-based curries and exotic spices.</p>
                     <div class="hero-btns">
-                        <a href="<?php echo esc_url(home_url('/menu')); ?>" class="btn btn-primary">🦐 Explore Seafood</a>
-                        <a href="<?php echo esc_url(home_url('/about')); ?>" class="btn btn-outline" style="color: white; border-color: white;">🏠 About Us</a>
+                        <a href="#front-contact-section" class="btn btn-primary">🦐 Explore Seafood</a>
+                        <a href="#front-contact-section" class="btn btn-outline" style="color: white; border-color: white;">🏠 About Us</a>
                     </div>
                 </div>
             </div>
@@ -69,7 +69,7 @@
                     <p class="lead-text">For over two decades, MVK Heritage Foods has been the heart of authentic Kerala and Malabar cuisine in Kannur. What started as a small family eatery has grown into one of the most beloved dining destinations in North Kerala.</p>
                     <p>Our journey began with a simple vision — to preserve the traditional flavors of Kerala while serving them with warmth and hospitality. Today, we continue that legacy, preparing every dish with the same passion and dedication that has defined us since day one.</p>
                     <p>From our signature Malabar Dum Biriyani to the freshest seafood from the Arabian Sea, every plate tells a story of heritage, quality, and love for food.</p>
-                    <a href="<?php echo esc_url(home_url('/about')); ?>" class="btn btn-outline">Read Our Full Story</a>
+                    <a href="#front-contact-section" class="btn btn-outline">Read Our Full Story</a>
                 </div>
                 <div class="about-image">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/shared/1000150051.jpg" alt="MVK Heritage Foods Interior">
@@ -150,7 +150,7 @@
                             <img src="<?php echo get_template_directory_uri(); ?>/images/shared/1000150059.jpg" alt="Signature Banquet Hall">
                         </a>
                         <div class="venue-overlay">
-                            <a href="<?php echo esc_url(home_url('/signature-banquet-hall')); ?>" class="btn btn-primary">View Details</a>
+                            <a href="#front-contact-section" class="btn btn-primary">View Details</a>
                         </div>
                     </div>
                     <div class="venue-content">
@@ -208,36 +208,65 @@
             </div>
             <div class="venues-cta">
                 <p>Planning a special event? Let us help you create unforgettable memories.</p>
-                <a href="<?php echo esc_url(home_url('/contact')); ?>" class="btn btn-primary">Inquire About Venues</a>
+                <a href="#front-contact-section" class="btn btn-primary">Inquire About Venues</a>
             </div>
         </div>
     </section>
     <!-- Dedicated Catering Section (Artistic Redesign) -->
-    <section class="catering-section">
-        <div class="container catering-container">
-            <div class="catering-art-wrapper">
-                <div class="catering-visual" data-aos="fade-right">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/catering.png" alt="MVK Heritage Catering" class="catering-img-main">
-                    <div class="catering-floating-badge">
-                        <span>25+</span>
-                        <p>Years of Flavor</p>
+    <section class="catering-section-premium" id="catering">
+        <div class="container">
+            <div class="catering-grid-v3">
+                <div class="catering-visual-v3" data-aos="fade-right">
+                    <div class="visual-main">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/catering.png" alt="MVK Heritage Catering" class="img-responsive">
+                    </div>
+                    <div class="visual-accent">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/shared/1000150059.jpg" alt="Signature Event">
+                    </div>
+                    <div class="catering-experience-badge">
+                        <span class="count">25+</span>
+                        <span class="label">Years of Flavor</span>
                     </div>
                 </div>
-                <div class="catering-content-premium" data-aos="fade-left">
-                    <span class="label">Luxury Catering</span>
-                    <h2>Elegance in Every Bite</h2>
-                    <p class="catering-desc">We bring more than just food; we bring an experience. Our premium catering services combine the timeless heritage of Malabar cuisine with modern professional service for events that are remembered for a lifetime.</p>
+                
+                <div class="catering-info-v3" data-aos="fade-left">
+                    <div class="section-title-alt">
+                        <span class="subtitle">Luxury Catering</span>
+                        <h2>Elegance in Every Bite</h2>
+                    </div>
                     
-                    <ul class="catering-list-premium">
-                        <li>Traditional Malabar Sadya <span>Authentic</span></li>
-                        <li>Live Appam & Seafood Counters <span>Interactive</span></li>
-                        <li>Corporate Gala Dinners <span>Professional</span></li>
-                        <li>Custom Celebration Cakes <span>Exclusive</span></li>
-                    </ul>
+                    <p class="description">We bring more than just food; we bring an experience. Our premium catering services combine the timeless heritage of Malabar cuisine with modern professional service for events that are remembered for a lifetime.</p>
                     
-                    <div class="catering-btn-group">
-                        <a href="<?php echo esc_url(home_url('/contact')); ?>" class="btn btn-primary">Book an Event</a>
-                        <a href="<?php echo esc_url(home_url('/services')); ?>" class="btn btn-outline">Our Expertise</a>
+                    <div class="services-list-v3">
+                        <div class="service-item-v3">
+                            <div class="service-text">
+                                <h3>Traditional Malabar Sadya</h3>
+                                <p>Authentic culinary journey on plantain leaf</p>
+                            </div>
+                        </div>
+                        <div class="service-item-v3">
+                            <div class="service-text">
+                                <h3>Live Appam & Seafood Counters</h3>
+                                <p>Interactive dining with fresh preparations</p>
+                            </div>
+                        </div>
+                        <div class="service-item-v3">
+                            <div class="service-text">
+                                <h3>Corporate Gala Dinners</h3>
+                                <p>Professional service for your milestones</p>
+                            </div>
+                        </div>
+                        <div class="service-item-v3">
+                            <div class="service-text">
+                                <h3>Custom Celebration Cakes</h3>
+                                <p>Exclusive designs for your special moments</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="catering-actions-v3">
+                        <a href="#front-contact-section" class="btn btn-primary">Book an Event</a>
+                        <a href="#front-contact-section" class="btn btn-outline">Our Expertise</a>
                     </div>
                 </div>
             </div>
@@ -246,7 +275,7 @@
 
 
     <!-- Specialties -->
-    <section class="specialties" style="background: #fff;">
+    <section class="specialties" style="background: #fff; padding-top: 40px; padding-bottom: 100px;">
         <div class="container">
             <div class="section-title">
                 <span>Signature Flavors</span>
@@ -321,8 +350,8 @@
                         <img src="<?php echo get_template_directory_uri(); ?>/images/location_pin.png" alt="Location">
                     </div>
                     <h3>Our Address</h3>
-                    <p>MVK Heritage Foods, Main Road<br>Kannur, Kerala 670001</p>
-                    <a href="https://maps.google.com" target="_blank" class="btn btn-outline">Get Directions</a>
+                    <p>MVK Heritage Foods<br>Opposite Railway Station,<br>Kannur, Kerala 670001</p>
+                    <a href="https://www.google.com/maps/dir//MVK+Heritage+Foods+Kannur+Kerala+670001" target="_blank" class="btn btn-outline">Get Directions</a>
                 </div>
 
                 <!-- Hours Card -->
@@ -341,8 +370,8 @@
                         <img src="<?php echo get_template_directory_uri(); ?>/images/phone_icon.png" alt="Phone">
                     </div>
                     <h3>Call Us</h3>
-                    <p class="phone-number">+91 XXXXX XXXXX</p>
-                    <a href="tel:+91XXXXXXXXXX" class="btn btn-primary">Call Now</a>
+                    <p class="phone-number">+91 92077 22666</p>
+                    <a href="tel:+919207722666" class="btn btn-primary">Call Now</a>
                 </div>
             </div>
 
@@ -356,7 +385,7 @@
                         <span class="feature-tag">✔ Takeaway</span>
                         <span class="feature-tag">✔ Online Orders</span>
                     </div>
-                    <a href="#" class="btn btn-primary">Order Now</a>
+                    <a href="#front-contact-section" class="btn btn-primary">Order Now</a>
                 </div>
             </div>
 
@@ -365,8 +394,8 @@
                 <h3>🍽️ Hungry for something delicious?</h3>
                 <p>Come dine with us today!</p>
                 <div class="cta-buttons">
-                    <a href="<?php echo esc_url(home_url('/contact')); ?>" class="btn btn-primary">Reserve a Table</a>
-                    <a href="<?php echo esc_url(home_url('/contact')); ?>" class="btn btn-outline">Contact Us</a>
+                    <a href="#front-contact-section" class="btn btn-primary">Book Service</a>
+                    <a href="#front-contact-section" class="btn btn-outline">Contact Us</a>
                 </div>
             </div>
         </div>
@@ -450,7 +479,7 @@
 
     <!-- Final CTA -->
     <!-- Final CTA & Reservation Form (Redesigned) -->
-    <section style="padding: 100px 0; background: #222; position: relative; overflow: hidden;">
+    <section id="front-contact-section" style="padding: 100px 0; background: #222; position: relative; overflow: hidden;">
         <!-- Background Overlay/Effect -->
         <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%); z-index: 1;"></div>
         
@@ -458,8 +487,8 @@
             
             <!-- Left Side Content -->
             <div style="flex: 1; min-width: 300px; color: white;">
-                <h2 style="font-size: 3.5rem; line-height: 1.1; margin-bottom: 25px; font-weight: 800; text-transform: uppercase;">
-                    <span style="color: var(--secondary);">Ready to Taste</span><br>
+                <h2 style="font-size: 3.5rem; line-height: 1.1; margin-bottom: 25px; font-weight: 800; text-transform: uppercase; color: var(--secondary);">
+                    Ready to Taste<br>
                     The Real Malabar?
                 </h2>
                 <p style="font-size: 1.1rem; line-height: 1.6; color: #ccc; margin-bottom: 40px; max-width: 500px;">
@@ -474,7 +503,7 @@
                         </div>
                         <div>
                             <span style="display: block; font-size: 0.8rem; letter-spacing: 1px; color: #999; text-transform: uppercase;">Available 7 Days</span>
-                            <strong style="font-size: 1.5rem; color: white;">+91 98765 43210</strong>
+                            <strong style="font-size: 1.5rem; color: white;">+91 92077 22666</strong>
                         </div>
                     </div>
                 </div>
@@ -483,36 +512,33 @@
             <!-- Right Side Form -->
             <div style="flex: 1; min-width: 350px; max-width: 500px;">
                 <div style="background: white; padding: 40px; border-radius: 12px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); border-top: 5px solid var(--secondary);">
-                    <h3 style="color: var(--dark); font-size: 1.8rem; text-align: center; margin-bottom: 30px; text-transform: uppercase; font-weight: 800;">Book Your Table</h3>
+                    <h3 style="color: var(--dark); font-size: 1.8rem; text-align: center; margin-bottom: 30px; text-transform: uppercase; font-weight: 800;">Book Your Service</h3>
                     
                     <form action="#" method="post" style="display: grid; gap: 15px;">
                         <input type="text" name="name" placeholder="Full Name" required 
                             style="width: 100%; padding: 15px; background: #f4f4f4; border: 1px solid #eee; border-radius: 6px; font-family: 'Outfit', sans-serif;">
                         
+                        <input type="email" name="email" placeholder="Email Address" required 
+                            style="width: 100%; padding: 15px; background: #f4f4f4; border: 1px solid #eee; border-radius: 6px; font-family: 'Outfit', sans-serif;">
+
                         <input type="tel" name="phone" placeholder="Phone Number" required 
                             style="width: 100%; padding: 15px; background: #f4f4f4; border: 1px solid #eee; border-radius: 6px; font-family: 'Outfit', sans-serif;">
                         
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
-                            <input type="number" name="guests" placeholder="Guests" min="1" required 
-                                style="width: 100%; padding: 15px; background: #f4f4f4; border: 1px solid #eee; border-radius: 6px; font-family: 'Outfit', sans-serif;">
-                            
-                            <input type="date" name="date" required 
-                                style="width: 100%; padding: 15px; background: #f4f4f4; border: 1px solid #eee; border-radius: 6px; font-family: 'Outfit', sans-serif;">
-                        </div>
-
-                        <select name="time" required 
+                        <select name="purpose" required 
                             style="width: 100%; padding: 15px; background: #f4f4f4; border: 1px solid #eee; border-radius: 6px; font-family: 'Outfit', sans-serif; color: #555;">
-                            <option value="">Select Time</option>
-                            <option value="lunch">Lunch (12:00 PM - 3:00 PM)</option>
-                            <option value="dinner">Dinner (7:00 PM - 10:00 PM)</option>
+                            <option value="">Select Purpose</option>
+                            <option value="Service Booking">Service Booking</option>
+                            <option value="Catering Query">Catering Query</option>
+                            <option value="General Inquiry">General Inquiry</option>
+                            <option value="Feedback">Feedback</option>
                         </select>
                         
-                        <textarea name="details" placeholder="Additional Details (Optional)" rows="2" 
+                        <textarea name="message" placeholder="Your Message" rows="3" required 
                             style="width: 100%; padding: 15px; background: #f4f4f4; border: 1px solid #eee; border-radius: 6px; font-family: 'Outfit', sans-serif; resize: none;"></textarea>
 
                         <button type="submit" class="btn btn-primary" 
                             style="width: 100%; padding: 18px; font-size: 1.1rem; font-weight: 800; text-transform: uppercase; background: var(--secondary); border: none; color: #000; margin-top: 10px;">
-                            Reserve Now
+                            Send Message
                         </button>
                     </form>
                 </div>

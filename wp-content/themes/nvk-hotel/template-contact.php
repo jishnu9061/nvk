@@ -35,8 +35,13 @@ get_header(); ?>
                 <div class="info-item" style="margin-bottom: 40px;">
                     <h4 style="color: var(--primary); margin-bottom: 10px; font-family: 'Marcellus', serif;">Contacts</h4>
                     <p style="color: #666; margin-bottom: 5px;"><strong>Phone:</strong> +91 92077 22666</p>
-                    <p style="color: #666; margin-bottom: 5px;"><strong>WhatsApp:</strong> <a href="https://wa.me/919207722666" target="_blank" style="color: var(--primary); text-decoration: none;">+91 92077 22666</a></p>
-                    <p style="color: #666;"><strong>Email:</strong> info@mvkheritage.com</p>
+                    <p style="color: #666; margin-bottom: 20px;"><strong>Email:</strong> info@mvkheritage.com</p>
+                    
+                    <div class="contact-social-links" style="display: flex; gap: 20px; margin-top: 25px;">
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                    </div>
                 </div>
 
                 <div class="info-item" style="margin-bottom: 40px;">
@@ -81,7 +86,7 @@ get_header(); ?>
                             <div class="form-group">
                                 <label style="display: block; margin-bottom: 8px; font-weight: 500; font-size: 0.9rem;">Purpose</label>
                                 <select style="width: 100%; padding: 15px; border: 1px solid #ddd; border-radius: 6px; background: #fafafa;">
-                                    <option>Table Reservation</option>
+                                    <option>Service Booking</option>
                                     <option>Catering Query</option>
                                     <option>General Inquiry</option>
                                     <option>Feedback</option>

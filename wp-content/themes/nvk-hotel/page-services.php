@@ -297,8 +297,8 @@ get_header(); ?>
                     <p>Yes, we have a dedicated spacious parking area that can accommodate over 20 cars and bikes comfortably.</p>
                 </div>
                 <div class="faq-item">
-                    <h4>Do you take table reservations?</h4>
-                    <p>Yes, we recommend booking tables in advance for weekends and holidays. You can call us or use the form below.</p>
+                    <h4>Do you take service bookings?</h4>
+                    <p>Yes, we recommend booking services in advance for weekends and holidays. You can call us or use the form below.</p>
                 </div>
                 <div class="faq-item">
                     <h4>Is the meat Halal?</h4>

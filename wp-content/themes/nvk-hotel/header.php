@@ -32,7 +32,7 @@
                 </div>
             </nav>
             <div class="header-cta">
-                <a href="<?php echo esc_url(home_url('/contact')); ?>" class="btn btn-primary">Reservations</a>
+                <a href="<?php echo esc_url(home_url('/contact')); ?>" class="btn btn-primary">Book Service</a>
             </div>
         </div>
     </header>

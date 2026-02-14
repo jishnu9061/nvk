@@ -327,9 +327,9 @@ get_header(); ?>
             <div class="cta-content">
                 <span class="cta-label">Experience The Legacy</span>
                 <h3>Ready to Taste Malabar?</h3>
-                <p>Book your table today and embark on a culinary journey like no other.</p>
+                <p>Book your service today and embark on a culinary journey like no other.</p>
                 <div class="cta-buttons">
-                    <a href="<?php echo esc_url(home_url('/contact')); ?>" class="btn btn-primary">Reserve a Table</a>
+                    <a href="<?php echo esc_url(home_url('/contact')); ?>" class="btn btn-primary">Book Service</a>
                     <a href="tel:+91XXXXXXXXXX" class="btn btn-outline" style="color: white; border-color: rgba(255,255,255,0.3);">Call for Delivery</a>
                 </div>
             </div>
