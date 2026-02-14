@@ -34,8 +34,9 @@ get_header(); ?>
 
                 <div class="info-item" style="margin-bottom: 40px;">
                     <h4 style="color: var(--primary); margin-bottom: 10px; font-family: 'Marcellus', serif;">Contacts</h4>
-                    <p style="color: #666; margin-bottom: 5px;"><strong>Phone:</strong> +91 98765 43210</p>
-                    <p style="color: #666;"><strong>Email:</strong> hello@mvkheritage.com</p>
+                    <p style="color: #666; margin-bottom: 5px;"><strong>Phone:</strong> +91 92077 22666</p>
+                    <p style="color: #666; margin-bottom: 5px;"><strong>WhatsApp:</strong> <a href="https://wa.me/919207722666" target="_blank" style="color: var(--primary); text-decoration: none;">+91 92077 22666</a></p>
+                    <p style="color: #666;"><strong>Email:</strong> info@mvkheritage.com</p>
                 </div>
 
                 <div class="info-item" style="margin-bottom: 40px;">
@@ -47,7 +48,7 @@ get_header(); ?>
                 <!-- Map -->
                 <div class="map-box" style="width: 100%; height: 300px; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3904.434676602565!2d75.36686031481566!3d11.874477991582236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba422c60e451b69%3A0x6b45367a80b7413d!2sKannur%20Railway%20Station!5e0!3m2!1sen!2sin!4v1628156783224!5m2!1sen!2sin"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3904.2908309915924!2d75.3725783!3d11.8848255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba43d0011d37d21%3A0x307618daaea1758f!2sMVK%20Heritage%20Foods!5e0!3m2!1sen!2sin!4v1771052802436!5m2!1sen!2sin"
                         width="100%"
                         height="100%"
                         style="border:0;"

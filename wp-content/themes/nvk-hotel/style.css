@@ -205,7 +205,7 @@ body.admin-bar header {
 }
 
 .logo-img {
-    max-height: 130px;
+    max-height: 140px;
     /* Increased logo size as requested */
     height: auto;
     width: auto;
@@ -1328,8 +1328,8 @@ footer {
 
 .footer-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr 1.5fr;
-    gap: 60px;
+    grid-template-columns: 1.5fr 0.8fr 1.2fr 1.5fr;
+    gap: 40px;
     margin-bottom: 80px;
 }
 
@@ -1339,7 +1339,7 @@ footer {
 }
 
 .footer-logo-img {
-    height: 80px;
+    height: 100px;
     width: auto;
     max-width: 100%;
     object-fit: contain;
@@ -1400,7 +1400,8 @@ footer {
         grid-template-columns: 1fr 1fr;
     }
 
-    .footer-col:first-child {
+    .footer-col:first-child,
+    .footer-col:last-child {
         grid-column: span 2;
     }
 
@@ -1415,7 +1416,7 @@ footer {
     }
 
     .logo-img {
-        max-height: 60px;
+        max-height: 100px;
     }
 
     h1 {
@@ -1473,7 +1474,7 @@ footer {
     }
 
     .logo-img {
-        max-height: 90px;
+        max-height: 100px;
     }
 
     .nav-menu-wrapper {
@@ -1575,7 +1576,8 @@ footer {
         gap: 30px;
     }
 
-    .footer-col:first-child {
+    .footer-col:first-child,
+    .footer-col:last-child {
         grid-column: span 1;
     }
 
@@ -3714,5 +3716,52 @@ header.header-scrolled .logo-img {
     .gallery-item.large {
         grid-column: span 1;
         height: 350px;
+    }
+}
+
+/* Floating WhatsApp Button */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    background-color: #128c7e;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    color: #FFF;
+}
+
+.whatsapp-icon {
+    width: 32px;
+    height: 32px;
+    fill: currentColor;
+}
+
+@media screen and (max-width: 768px) {
+    .whatsapp-float {
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .whatsapp-icon {
+        width: 25px;
+        height: 25px;
     }
 }
