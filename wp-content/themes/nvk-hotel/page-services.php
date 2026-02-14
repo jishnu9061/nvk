@@ -18,7 +18,7 @@ get_header(); ?>
         <div class="service-intro text-center">
             <span class="sub-heading">Our Expertise</span>
             <h2>How We Serve You</h2>
-            <p class="lead-text">From intimate family dinners to grand wedding banquets, MVK Heritage Foods brings the authentic taste of Malabar to every occasion. We take pride in our versatility and commitment to excellence.</p>
+            <p class="lead-text">From intimate family dinners to grand wedding banquets, housewarming ceremonies, and social gatherings, MVK Heritage Foods brings the authentic taste of Malabar to every occasion. We take pride in our versatility and commitment to excellence.</p>
         </div>
 
         <!-- Services Grid -->
@@ -92,6 +92,24 @@ get_header(); ?>
                     <div class="service-icon">📦</div>
                     <h3>Bulk Orders</h3>
                     <p>Planning a small get-together at home? We offer special bulk pricing for party orders and family functions.</p>
+                </div>
+            </div>
+
+            <!-- Traditional Sadya (NEW) -->
+            <div class="specialty-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="specialty-info main-service-card">
+                    <div class="service-icon">🍃</div>
+                    <h3>Traditional Sadya</h3>
+                    <p>Authentic Kerala feast served on plantain leaves, featuring a grand variety of traditional vegetarian delicacies.</p>
+                </div>
+            </div>
+
+            <!-- Housewarming Catering (NEW) -->
+            <div class="specialty-card" data-aos="fade-up" data-aos-delay="600">
+                <div class="specialty-info main-service-card">
+                    <div class="service-icon">🏠</div>
+                    <h3>Housewarming Catering</h3>
+                    <p>Celebrate your new home with a perfect feast. We offer customized menus that match the sanctity and joy of your new beginning.</p>
                 </div>
             </div>
         </div>
@@ -250,6 +268,10 @@ get_header(); ?>
                 <div class="amenity-card">
                     <div class="amenity-icon">🚻</div>
                     <h4>Clean Restrooms</h4>
+                </div>
+                <div class="amenity-card">
+                    <div class="amenity-icon">🛡️</div>
+                    <h4>CCTV Protected</h4>
                 </div>
             </div>
         </div>

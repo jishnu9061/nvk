@@ -43,7 +43,7 @@ get_header(); ?>
                 </div>
             </div>
             <div class="about-image">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/heritage.png" alt="MVK Heritage Building">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/shared/1000150060.jpg" alt="MVK Heritage Interior">
             </div>
         </div>
 
@@ -91,7 +91,7 @@ get_header(); ?>
         <!-- Culinary Philosophy -->
         <div class="about-content" style="margin: 120px 0; align-items: center; gap: 80px;">
             <div class="about-image" style="order: 2;">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/meals.png" alt="Fresh Ingredients">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/shared/1000150058.jpg" alt="Fresh Ingredients">
             </div>
             <div class="about-text" style="order: 1;">
                 <div class="section-title" style="text-align: left; margin-bottom: 30px;">

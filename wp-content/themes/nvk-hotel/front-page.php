@@ -5,15 +5,15 @@
     <section class="hero-slider">
         <div class="slider-wrapper">
             <!-- Slide 1 -->
-            <div class="slide active" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/hero.png');">
+            <div class="slide active" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/biriyani_gold.png');">
                 <div class="slide-overlay"></div>
                 <div class="container slide-content">
                     <span>Authentic Kerala & Indian Cuisine</span>
-                    <h2>Taste the Legacy of Indian Cuisine</h2>
-                    <p>Serving traditional Kerala, Malabar & Indian delicacies with unmatched quality and hospitality in the heart of Kannur.</p>
+                    <h2>Experience the Grandeur of Malabar</h2>
+                    <p>Serving traditional Kerala, Malabar & Indian delicacies with unmatched quality and hospitality in our premium banquet halls and dining spaces.</p>
                     <div class="hero-btns">
                         <a href="<?php echo esc_url(home_url('/menu')); ?>" class="btn btn-primary">🍽️ Explore Menu</a>
-                        <a href="<?php echo esc_url(home_url('/contact')); ?>" class="btn btn-outline" style="color: white; border-color: white;">📅 Book a Table</a>
+                        <a href="<?php echo esc_url(home_url('/contact')); ?>" class="btn btn-outline" style="color: white; border-color: white;">📅 Book a Venue</a>
                     </div>
                 </div>
             </div>
@@ -72,7 +72,7 @@
                     <a href="<?php echo esc_url(home_url('/about')); ?>" class="btn btn-outline">Read Our Full Story</a>
                 </div>
                 <div class="about-image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/hero.png" alt="MVK Heritage Foods Interior">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/shared/1000150051.jpg" alt="MVK Heritage Foods Interior">
                 </div>
             </div>
         </div>
@@ -139,69 +139,76 @@
         <div class="container">
             <div class="section-title">
                 <span>Our Spaces</span>
-                <h2>Explore Our Venues</h2>
+                <h2>3 Premium Banquet Halls</h2>
             </div>
             <div class="venues-grid">
-                <!-- Dining Hall -->
-                <article class="venue-card">
+                <!-- Banquet Hall 1 -->
+                <!-- Banquet Hall 1 -->
+                <article class="venue-card" data-aos="fade-up">
                     <div class="venue-image">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/dining_hall.png" alt="Dining Hall">
+                        <a href="<?php echo esc_url(home_url('/signature-banquet-hall')); ?>">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/shared/1000150059.jpg" alt="Signature Banquet Hall">
+                        </a>
                         <div class="venue-overlay">
-                            <a href="<?php echo esc_url(home_url('/dining-hall')); ?>" class="btn btn-primary">View Details</a>
-                        </div>
-                    </div>
-                    <div class="venue-content">
-                        <span class="venue-category">Restaurant</span>
-                        <h3>Dining Hall</h3>
-                        <p>Experience fine dining in our elegant restaurant space. With traditional Kerala decor and modern amenities, our dining hall offers the perfect ambiance for memorable meals with family and friends.</p>
-                        <div class="venue-meta">
-                            <span>👥 Capacity: 100+ guests</span>
-                            <span>🍽️ Fine Dining</span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Reception Hall -->
-                <article class="venue-card">
-                    <div class="venue-image">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/reception_hall.png" alt="Reception Hall">
-                        <div class="venue-overlay">
-                            <a href="<?php echo esc_url(home_url('/reception-hall')); ?>" class="btn btn-primary">View Details</a>
+                            <a href="<?php echo esc_url(home_url('/signature-banquet-hall')); ?>" class="btn btn-primary">View Details</a>
                         </div>
                     </div>
                     <div class="venue-content">
                         <span class="venue-category">Events</span>
-                        <h3>Reception Hall</h3>
-                        <p>Our grand reception hall is perfect for wedding receptions, corporate events, and celebrations. Beautifully decorated with traditional Indian aesthetics and world-class facilities.</p>
+                        <h3><a href="<?php echo esc_url(home_url('/signature-banquet-hall')); ?>">Signature Banquet Hall</a></h3>
+                        <p>Our premier banquet space designed for large gatherings, corporate conferences, and elegant wedding receptions with premium amenities.</p>
                         <div class="venue-meta">
-                            <span>👥 Capacity: 300+ guests</span>
-                            <span>💒 Weddings & Events</span>
+                            <span>👥 Capacity: 100 Persons</span>
+                            <span>🌟 Premium Space</span>
                         </div>
                     </div>
                 </article>
 
-                <!-- Engagement Hall -->
-                <article class="venue-card">
+                <!-- Banquet Hall 2 -->
+                <article class="venue-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="venue-image">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/engagement_hall.png" alt="Engagement Hall">
+                        <a href="<?php echo esc_url(home_url('/executive-banquet-i')); ?>">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/shared/1000150053.jpg" alt="Executive Banquet I">
+                        </a>
                         <div class="venue-overlay">
-                            <a href="<?php echo esc_url(home_url('/engagement-hall')); ?>" class="btn btn-primary">View Details</a>
+                            <a href="<?php echo esc_url(home_url('/executive-banquet-i')); ?>" class="btn btn-primary">View Details</a>
                         </div>
                     </div>
                     <div class="venue-content">
-                        <span class="venue-category">Celebrations</span>
-                        <h3>Engagement Hall</h3>
-                        <p>Celebrate your special moments in our beautifully designed engagement hall. Featuring stunning stage setups, premium seating, and customizable decorations for your perfect ceremony.</p>
+                        <span class="venue-category">Events</span>
+                        <h3><a href="<?php echo esc_url(home_url('/executive-banquet-i')); ?>">Executive Banquet I</a></h3>
+                        <p>An intimate space perfect for private parties, family celebrations, and business meetings with a sophisticated atmosphere.</p>
                         <div class="venue-meta">
-                            <span>👥 Capacity: 200+ guests</span>
-                            <span>💍 Engagements & Functions</span>
+                            <span>👥 Capacity: 30 Persons</span>
+                            <span>👔 Professional</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Banquet Hall 3 -->
+                <article class="venue-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="venue-image">
+                        <a href="<?php echo esc_url(home_url('/executive-banquet-ii')); ?>">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/shared/1000150054.jpg" alt="Executive Banquet II">
+                        </a>
+                        <div class="venue-overlay">
+                            <a href="<?php echo esc_url(home_url('/executive-banquet-ii')); ?>" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                    <div class="venue-content">
+                        <span class="venue-category">Events</span>
+                        <h3><a href="<?php echo esc_url(home_url('/executive-banquet-ii')); ?>">Executive Banquet II</a></h3>
+                        <p>Versatile banquet hall ideal for smaller functions, workshops, or private dining experiences with dedicated service.</p>
+                        <div class="venue-meta">
+                            <span>👥 Capacity: 30 Persons</span>
+                            <span>💎 Exclusive</span>
                         </div>
                     </div>
                 </article>
             </div>
             <div class="venues-cta">
                 <p>Planning a special event? Let us help you create unforgettable memories.</p>
-                <a href="<?php echo esc_url(home_url('/contact')); ?>" class="btn btn-primary">Book a Venue</a>
+                <a href="<?php echo esc_url(home_url('/contact')); ?>" class="btn btn-primary">Inquire About Venues</a>
             </div>
         </div>
     </section>
@@ -361,6 +368,32 @@
                     <a href="<?php echo esc_url(home_url('/contact')); ?>" class="btn btn-primary">Reserve a Table</a>
                     <a href="<?php echo esc_url(home_url('/contact')); ?>" class="btn btn-outline">Contact Us</a>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="section-title">
+                <span>Visual Journey</span>
+                <h2>Our Moments & Spaces</h2>
+            </div>
+            <div class="gallery-grid">
+                <?php 
+                $gallery_images = [
+                    '1000150051.jpg', '1000150052.jpg', '1000150053.jpg', '1000150054.jpg',
+                    '1000150055.jpg', '1000150056.jpg', '1000150057.jpg', '1000150058.jpg',
+                    '1000150059.jpg', '1000150060.jpg', '1000150061.jpg', '1000150062.jpg'
+                ];
+                foreach($gallery_images as $image) : ?>
+                    <div class="gallery-item">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/shared/<?php echo $image; ?>" alt="MVK Heritage Moment">
+                        <div class="gallery-hover">
+                            <span>View Moment</span>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
             </div>
         </div>
     </section>

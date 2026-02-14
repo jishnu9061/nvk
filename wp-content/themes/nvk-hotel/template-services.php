@@ -18,7 +18,7 @@ get_header(); ?>
         <div class="service-intro text-center">
             <span class="sub-heading">Our Expertise</span>
             <h2>How We Serve You</h2>
-            <p class="lead-text">From intimate family dinners to grand wedding banquets, MVK Heritage Foods brings the authentic taste of Malabar to every occasion. We take pride in our versatility and commitment to excellence.</p>
+            <p class="lead-text">From intimate family dinners to grand wedding banquets, housewarming ceremonies, and social gatherings, MVK Heritage Foods brings the authentic taste of Malabar to every occasion. We take pride in our versatility and commitment to excellence.</p>
         </div>
 
         <!-- Services Grid -->
@@ -94,6 +94,16 @@ get_header(); ?>
                     <p>Planning a small get-together at home? We offer special bulk pricing for party orders and family functions.</p>
                 </div>
             </div>
+
+            <!-- Housewarming Catering (NEW) -->
+            <div class="specialty-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="specialty-info main-service-card">
+                    <div class="service-icon">🏠</div>
+                    <h3>Housewarming Catering</h3>
+                    <p>Celebrate your new home with a perfect feast. We offer customized menus that match the sanctity and joy of your new beginning.</p>
+                </div>
+            </div>
+
         </div>
         <br><br>
         <!-- NEW: Process Section (Timeline) -->
@@ -132,72 +142,82 @@ get_header(); ?>
         <div class="container">
             <div class="section-title text-center mb-60">
                 <span>Our Spaces</span>
-                <h2>Explore Our Venues</h2>
+                <h2>3 Premium Banquet Halls</h2>
+                <p style="color: #666; max-width: 700px; margin: 15px auto 0;">From grand celebrations to intimate gatherings, we offer three distinct spaces tailored to your needs.</p>
             </div>
 
             <div class="venues-list">
-                <!-- Venue 1: Dining Hall -->
+                <!-- Venue 1: Signature Banquet Hall -->
                 <div class="venue-row" data-aos="fade-up">
                     <div class="venue-col-img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/dining_hall.png" alt="Main Dining Hall">
-                        <div class="venue-badge">Capacity: 100+</div>
-                    </div>
-                    <div class="venue-col-text">
-                        <span class="venue-subtitle">Fine Dining</span>
-                        <h3>Main Dining Hall</h3>
-                        <p>A warm, inviting space rooted in tradition. Perfect for family meals, casual gatherings, and enjoying the authentic taste of Malabar in a comfortable setting. The traditionally inspired decor sets the mood for a relaxed culinary journey.</p>
-                        <ul class="venue-features-list">
-                            <li>Fully Air-conditioned</li>
-                            <li>Traditional Decor</li>
-                            <li>Family Cabins Available</li>
-                            <li>Table Service</li>
-                        </ul>
-                        <div class="venue-actions">
-                            <a href="<?php echo esc_url(home_url('/dining-hall')); ?>" class="btn btn-primary">View Details</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Venue 2: Engagement Hall -->
-                <div class="venue-row reverse" data-aos="fade-up">
-                    <div class="venue-col-img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/engagement_hall.png" alt="The Heritage Banquet">
-                        <div class="venue-badge">Capacity: 200+</div>
-                    </div>
-                    <div class="venue-col-text">
-                        <span class="venue-subtitle">Celebrations</span>
-                        <h3>The Heritage Banquet</h3>
-                        <p>An elegant, versatile venue designed for life's special moments. Ideal for engagement parties, birthday celebrations, and professional corporate meetings. The hall features customizable lighting and a premium sound system.</p>
-                        <ul class="venue-features-list">
-                            <li>Premium Sound System</li>
-                            <li>Dedicated Buffet Area</li>
-                            <li>Private Restrooms</li>
-                            <li>Custom Lighting</li>
-                        </ul>
-                        <div class="venue-actions">
-                            <a href="<?php echo esc_url(home_url('/engagement-hall')); ?>" class="btn btn-primary">View Details</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Venue 3: Reception Hall -->
-                <div class="venue-row" data-aos="fade-up">
-                    <div class="venue-col-img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/reception_hall.png" alt="Grand Reception Hall">
-                        <div class="venue-badge">Capacity: 300+</div>
+                        <a href="<?php echo esc_url(home_url('/signature-banquet-hall')); ?>">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/shared/1000150059.jpg" alt="Signature Banquet Hall">
+                        </a>
+                        <div class="venue-badge">Capacity: 100 Persons</div>
                     </div>
                     <div class="venue-col-text">
                         <span class="venue-subtitle">Grand Events</span>
-                        <h3>Grand Reception Hall</h3>
-                        <p>Our flagship venue for grand celebrations. A spacious, pillar-less architectural marvel that provides a majestic backdrop for weddings and large-scale receptions. Let us make your big day truly unforgettable.</p>
+                        <h3><a href="<?php echo esc_url(home_url('/signature-banquet-hall')); ?>">Signature Banquet Hall</a></h3>
+                        <p>Our premier banquet facility designed for grand celebrations, corporate conferences, and elegant wedding receptions. A spacious, air-conditioned hall with state-of-the-art amenities to make your large gatherings truly memorable.</p>
                         <ul class="venue-features-list">
-                            <li>Pillar-less Design</li>
-                            <li>Bridal Green Room</li>
-                            <li>Ample Valet Parking</li>
-                            <li>Grand Stage Setup</li>
+                            <li>Fully Air-conditioned</li>
+                            <li>Premium Sound System</li>
+                            <li>Traditional & Modern Decor</li>
+                            <li>Stage & AV Setup</li>
                         </ul>
                         <div class="venue-actions">
-                            <a href="<?php echo esc_url(home_url('/reception-hall')); ?>" class="btn btn-primary">View Details</a>
+                            <a href="<?php echo esc_url(home_url('/signature-banquet-hall')); ?>" class="btn btn-outline">View Details</a>
+                            <a href="<?php echo esc_url(home_url('/contact')); ?>" class="btn btn-primary">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Venue 2: Executive Banquet I -->
+                <div class="venue-row reverse" data-aos="fade-up">
+                    <div class="venue-col-img">
+                        <a href="<?php echo esc_url(home_url('/executive-banquet-i')); ?>">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/shared/1000150053.jpg" alt="Executive Banquet I">
+                        </a>
+                        <div class="venue-badge">Capacity: 30 Persons</div>
+                    </div>
+                    <div class="venue-col-text">
+                        <span class="venue-subtitle">Boutique Events</span>
+                        <h3><a href="<?php echo esc_url(home_url('/executive-banquet-i')); ?>">Executive Banquet I</a></h3>
+                        <p>An intimate and sophisticated space perfect for private parties, family celebrations, and business meetings. Offers a refined atmosphere with personalized service and attention to detail.</p>
+                        <ul class="venue-features-list">
+                            <li>Private Ambience</li>
+                            <li>Dedicated Service</li>
+                            <li>Flexible Seating</li>
+                            <li>Ideal for Small Groups</li>
+                        </ul>
+                        <div class="venue-actions">
+                            <a href="<?php echo esc_url(home_url('/executive-banquet-i')); ?>" class="btn btn-outline">View Details</a>
+                            <a href="<?php echo esc_url(home_url('/contact')); ?>" class="btn btn-primary">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Venue 3: Executive Banquet II -->
+                <div class="venue-row" data-aos="fade-up">
+                    <div class="venue-col-img">
+                        <a href="<?php echo esc_url(home_url('/executive-banquet-ii')); ?>">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/shared/1000150054.jpg" alt="Executive Banquet II">
+                        </a>
+                        <div class="venue-badge">Capacity: 30 Persons</div>
+                    </div>
+                    <div class="venue-col-text">
+                        <span class="venue-subtitle">Exclusive Gatherings</span>
+                        <h3><a href="<?php echo esc_url(home_url('/executive-banquet-ii')); ?>">Executive Banquet II</a></h3>
+                        <p>A versatile hall designed for smaller functions, workshops, or private dining experiences. Combines comfort with elegance, providing the perfect backdrop for your exclusive events.</p>
+                        <ul class="venue-features-list">
+                            <li>Modern Facilities</li>
+                            <li>Intimate Setting</li>
+                            <li>Custom Menu Options</li>
+                            <li>Professional Service</li>
+                        </ul>
+                        <div class="venue-actions">
+                            <a href="<?php echo esc_url(home_url('/executive-banquet-ii')); ?>" class="btn btn-outline">View Details</a>
+                            <a href="<?php echo esc_url(home_url('/contact')); ?>" class="btn btn-primary">Inquire Now</a>
                         </div>
                     </div>
                 </div>

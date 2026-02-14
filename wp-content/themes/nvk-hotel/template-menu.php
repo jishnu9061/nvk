@@ -6,7 +6,7 @@
 get_header(); ?>
 
 <section class="menu-hero">
-    <div class="menu-hero-bg" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/hero.png');"></div>
+    <div class="menu-hero-bg" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/shared/1000150051.jpg');"></div>
     <div class="container relative z-10">
         <div class="menu-hero-content">
             <span class="subtitle">Culinary Excellence</span>
@@ -323,10 +323,15 @@ get_header(); ?>
             </div>
         </div>
 
-        <div class="menu-download-section">
-            <div class="download-card">
-                <p>Experience our complete selection of ethnic delicacies in a printable format.</p>
-                <a href="#" class="btn btn-primary">Download Full Menu (PDF)</a>
+        <div class="menu-footer-cta" data-aos="fade-up">
+            <div class="cta-content">
+                <span class="cta-label">Experience The Legacy</span>
+                <h3>Ready to Taste Malabar?</h3>
+                <p>Book your table today and embark on a culinary journey like no other.</p>
+                <div class="cta-buttons">
+                    <a href="<?php echo esc_url(home_url('/contact')); ?>" class="btn btn-primary">Reserve a Table</a>
+                    <a href="tel:+91XXXXXXXXXX" class="btn btn-outline" style="color: white; border-color: rgba(255,255,255,0.3);">Call for Delivery</a>
+                </div>
             </div>
         </div>
     </div>

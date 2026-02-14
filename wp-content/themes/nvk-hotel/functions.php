@@ -33,7 +33,6 @@ add_action('wp_enqueue_scripts', 'nvk_hotel_scripts');
 
 function nvk_default_menu()
 {
-    echo '<div class="nav-menu-wrapper">';
     echo '<ul id="primary-menu" class="nav-list">';
     echo '<li><a href="' . esc_url(home_url('/')) . '" class="' . (is_front_page() ? 'active-link' : '') . '">Home</a></li>';
     echo '<li><a href="' . esc_url(home_url('/about')) . '" class="' . ((is_page('about') || is_page_template('template-about.php')) && !is_front_page() ? 'active-link' : '') . '">About</a></li>';
@@ -42,7 +41,6 @@ function nvk_default_menu()
     echo '<li><a href="' . esc_url(home_url('/blog')) . '" class="' . (is_home() || is_singular('post') || is_archive() ? 'active-link' : '') . '">Blog</a></li>';
     echo '<li><a href="' . esc_url(home_url('/contact')) . '" class="' . ((is_page('contact') || is_page_template('template-contact.php')) && !is_front_page() ? 'active-link' : '') . '">Contact</a></li>';
     echo '</ul>';
-    echo '</div>';
 }
 
 /**

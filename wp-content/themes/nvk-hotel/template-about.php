@@ -115,7 +115,7 @@ get_header(); ?>
             </div>
         </div>
 
-        <!-- Team Section -->
+        <!-- Team Section
         <div class="team-section" style="margin-bottom: 120px; text-align: center;">
             <div class="section-title">
                 <span>The Masters</span>
@@ -144,7 +144,7 @@ get_header(); ?>
                     <p style="color: var(--secondary); font-size: 0.9rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;">Founder</p>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <!-- Visit CTA -->
         <div class="visit-cta" style="background: var(--dark); color: white; border: none; padding: 80px; text-align: center; border-radius: 20px; margin-bottom: 100px;">

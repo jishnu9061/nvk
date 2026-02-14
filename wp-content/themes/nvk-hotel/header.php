@@ -19,16 +19,17 @@
                 <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
                     <span class="hamburger"></span>
                 </button>
-                <?php
-                wp_nav_menu(array(
-                    'theme_location' => 'primary',
-                    'menu_id' => 'primary-menu',
-                    'container' => 'div',
-                    'container_class' => 'nav-menu-wrapper',
-                    'menu_class' => 'nav-list',
-                    'fallback_cb' => 'nvk_default_menu'
-                ));
-                ?>
+                <div class="nav-menu-wrapper">
+                    <?php
+                    wp_nav_menu(array(
+                        'theme_location' => 'primary',
+                        'menu_id' => 'primary-menu',
+                        'container' => false,
+                        'menu_class' => 'nav-list',
+                        'fallback_cb' => 'nvk_default_menu'
+                    ));
+                    ?>
+                </div>
             </nav>
             <div class="header-cta">
                 <a href="<?php echo esc_url(home_url('/contact')); ?>" class="btn btn-primary">Reservations</a>

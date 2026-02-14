@@ -8,14 +8,22 @@ get_header(); ?>
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
         <?php 
         $slug = get_post_field('post_name', get_the_ID());
-        $default_image = str_replace('-', '_', $slug) . '.png';
-        $hero_image = has_post_thumbnail() ? get_the_post_thumbnail_url(get_the_ID(), 'full') : get_template_directory_uri() . '/images/' . $default_image;
+        
+        // Mapping slugs to our high-quality images
+        $venue_images = [
+            'signature-banquet-hall' => '1000150059.jpg',
+            'executive-banquet-i'   => '1000150053.jpg',
+            'executive-banquet-ii'  => '1000150054.jpg'
+        ];
+        
+        $fallback_image = isset($venue_images[$slug]) ? $venue_images[$slug] : 'shared/1000150059.jpg';
+        $hero_image = has_post_thumbnail() ? get_the_post_thumbnail_url(get_the_ID(), 'full') : get_template_directory_uri() . '/images/shared/' . $fallback_image;
         ?>
         <!-- Venue Detail Hero -->
         <section class="venue-detail-hero" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('<?php echo $hero_image; ?>');">
             <div class="container">
-                <span class="venue-tag"><?php echo get_post_meta(get_the_ID(), 'venue_category', true) ?: 'Our Venue'; ?></span>
-                <h1><?php the_title(); ?></h1>
+                <span class="venue-tag" data-aos="fade-up"><?php echo get_post_meta(get_the_ID(), 'venue_category', true) ?: 'Our Venue'; ?></span>
+                <h1 data-aos="fade-up" data-aos-delay="100"><?php the_title(); ?></h1>
             </div>
         </section>
 
@@ -24,7 +32,7 @@ get_header(); ?>
             <div class="container">
                 <div class="venue-detail-grid">
                     <!-- Gallery Content -->
-                    <div class="venue-gallery">
+                    <div class="venue-gallery" data-aos="fade-right">
                         <div class="gallery-item large">
                             <?php if (has_post_thumbnail()) : ?>
                                 <?php the_post_thumbnail('large'); ?>
@@ -32,12 +40,11 @@ get_header(); ?>
                                 <img src="<?php echo $hero_image; ?>" alt="<?php the_title(); ?>">
                             <?php endif; ?>
                         </div>
-                        <!-- Add additional images if needed via ACF or custom fields -->
                         <div class="gallery-item">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/meals.png" alt="Food Service">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/shared/1000150060.jpg" alt="Venue Setup">
                         </div>
                         <div class="gallery-item">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/seafood.png" alt="Decoration">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/shared/1000150051.jpg" alt="Interior Detail">
                         </div>
                     </div>
 
