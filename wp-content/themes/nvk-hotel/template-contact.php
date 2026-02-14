@@ -37,7 +37,7 @@ get_header(); ?>
                     <p style="color: #666; margin-bottom: 5px;"><strong>Phone:</strong> +91 92077 22666</p>
                     <p style="color: #666; margin-bottom: 20px;"><strong>Email:</strong> info@mvkheritage.com</p>
                     
-                    <div class="contact-social-links" style="display: flex; gap: 20px; margin-top: 25px;">
+                    <div class="contact-social-links">
                         <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
                         <a href="#" target="_blank"><i class="fab fa-x-twitter"></i></a>

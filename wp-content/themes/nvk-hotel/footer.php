@@ -23,7 +23,7 @@
                     <p style="margin-bottom: 10px;">📍 Kannur, Kerala, India</p>
                     <p style="margin-bottom: 10px;">📞 +91 92077 22666</p>
                     <p style="margin-bottom: 15px;">📧 info@mvkheritage.com</p>
-                    <div class="footer-social-links" style="display: flex; gap: 15px;">
+                    <div class="footer-social-links">
                         <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
                         <a href="#" target="_blank"><i class="fab fa-x-twitter"></i></a>
